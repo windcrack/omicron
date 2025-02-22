@@ -1,9 +1,15 @@
 <script setup>
-
+const props = defineProps({
+  socialLink: {
+    type: String,
+    required: true,
+    default: '',
+  }
+})
 </script>
 
 <template>
-  <div class="social">
+  <a :href="props.socialLink" class="social">
       <slot></slot>
-  </div>
+  </a>
 </template>

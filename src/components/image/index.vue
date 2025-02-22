@@ -2,9 +2,8 @@
 const props = defineProps({
   imgUrl: {
     type: String,
-    default(){
-      return '';
-    }
+    required: true,
+    default: '',
   },
   imgAlt: {
     type: String,

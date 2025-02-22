@@ -24,13 +24,13 @@ import LogoWhite from "@/components/icons/logoWhite.vue";
           <LogoWhite />
         </div>
         <div class="banner__socials">
-          <Social>
+          <Social social-link="https://t.me/omicron">
             <IconTg />
           </Social>
-          <Social>
+          <Social social-link="https://vk.com/badbrowser.php">
             <IconVk />
           </Social>
-          <Social>
+          <Social social-link="https://ok.ru/">
             <IconOk />
           </Social>
         </div>

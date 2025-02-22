@@ -2,6 +2,8 @@
 
 import Contact from "@/components/contact/index.vue";
 import Img from "@/components/image/index.vue";
+import Social from "@/components/social/index.vue";
+import IconTg from "@/components/icons/IconTg.vue";
 
 const date = new Date();
 
@@ -20,9 +22,15 @@ const date = new Date();
         </div>
         <div class="footer__socials">
           <div class="footer__socials-title">СОЦ. СЕТИ:</div>
-          <Img img-url="/src/assets/img/tg-white.png" img-alt="tg" />
-          <Img img-url="/src/assets/img/vk-white.png" img-alt="vk" />
-          <Img img-url="/src/assets/img/ok-white.png" img-alt="ок" />
+          <Social social-link="https://t.me/omicron">
+            <Img img-url="/src/assets/img/tg-white.png" img-alt="tg" />
+          </Social>
+          <Social social-link="https://vk.com/badbrowser.php">
+            <Img img-url="/src/assets/img/vk-white.png" img-alt="vk" />
+          </Social>
+          <Social social-link="https://ok.ru/">
+            <Img img-url="/src/assets/img/ok-white.png" img-alt="ок" />
+          </Social>
         </div>
         <div class="footer__descr">
           <div class="footer__policy">Посещая сайт вы соглашаетесь на обработку

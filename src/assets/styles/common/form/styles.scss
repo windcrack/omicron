@@ -82,7 +82,13 @@
   &__inputs{
     display: flex;
     flex-flow: column;
-    gap: fluid(30, 15);
+    //gap: fluid(30, 15);
+    gap: fluid(10, 5);
+    margin-bottom: fluid(10, 5);
+
+    & > :nth-child(1 of .form__block){
+      margin-bottom: rem(20);
+    }
   }
 
   &__input{
@@ -107,7 +113,6 @@
     display: flex;
     align-items: center;
     gap: rem(10);
-    margin-block: fluid(10, 5);
     min-height: rem(40);
   }
 
@@ -140,10 +145,11 @@
   }
 
   &__button{
-
     width: 100%;
     display: flex;
     margin-bottom: rem(20);
+
+    text-decoration: none;
   }
 
   &__forgot{

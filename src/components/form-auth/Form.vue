@@ -27,18 +27,20 @@ import Forgot from "@/components/form-auth/Forgot.vue";
       <div class="form__inputs" v-if="store.getters.activeTab === 'agreement'">
         <Input type-input="text" text-placeholder="Номер договора" />
         <Input type-input="password" text-placeholder="Пароль" />
+        <Remember />
       </div>
       <div class="form__inputs" v-else>
         <Input type-input="text" text-placeholder="Логин" />
         <Input type-input="password" text-placeholder="Пароль" />
+        <Remember label-text="Запомнить логин" />
       </div>
 
-      <Remember />
-      <div class="form__button">
+
+      <RouterLink to="/lk" class="form__button">
         <Button>
           вход
         </Button>
-      </div>
+      </RouterLink>
       <Forgot />
     </div>
   </form>

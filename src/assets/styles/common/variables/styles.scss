@@ -10,6 +10,7 @@
   --color-blue: #0053ec;
   --color-blue-gray: #3c5ba6;
   --color-black: #000;
+  --color-black-light: #202121;
   --color-black-80: rgba(0, 0, 0, 0.8);
   --color-black-56: rgba(0, 0, 0, 0.56);
   --color-black-50: rgba(0, 0, 0, 0.5);
@@ -22,7 +23,7 @@
 
   // Тени
   --shadow-box-input: inset 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-  //--shadow-box: 0 8px 16px 0 rgba(0, 0, 0, 0.16);
+  --shadow-box-service: 0 4px 4px 0 rgba(0, 0, 0, 0.25), 0 4px 4px 0 rgba(0, 0, 0, 0.25), 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 
   // Размеры
   --container-width: #{rem(1240)};
