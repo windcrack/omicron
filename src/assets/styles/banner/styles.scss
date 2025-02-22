@@ -6,7 +6,7 @@
     min-height: rem(280);
   }
   overflow: hidden;
-  margin-block: rem(20) rem(50);
+  margin-block: rem(20) 0;
 
   &__body{
     display: flex;
@@ -56,20 +56,24 @@
 }
 
 .banner-services{
-  &__body{
-    background: var(--color-white);
-    border-radius: rem(45);
-    padding: rem(25) rem(45);
-
+  &__image{
+    position: absolute;
+    right: 0;
   }
 
-  &__title{
-    margin-bottom: rem(10);
-
-    font-weight: 600;
-    //font-size: 44px;
-    @include fluid-text(44, 24);
-    color: #0053ec;
+  &__body{
+    & > :nth-child(1 of .banner-services__image){
+      width: rem(250);
+      height: rem(265);
+      right: rem(330);
+      bottom: 0;
+    }
+    & > :nth-child(2 of .banner-services__image){
+      width: rem(310);
+      height: rem(280);
+      right: rem(40);
+      top: 0;
+    }
   }
 
   &__info{
@@ -86,15 +90,22 @@
   //gap: rem(45);
   display: grid;
   grid-template-columns: rem(40) auto rem(50);
+  grid-template-areas: 'img text link';
   column-gap: rem(14);
   align-items: center;
 
   &__image{
+    grid-area: img;
     width: rem(40);
     height: rem(40);
+
+    .pict{
+      object-fit: contain;
+    }
   }
 
   &__text{
+    grid-area: text;
     //max-width: rem(410);
     width: 100%;
   }
@@ -112,6 +123,7 @@
   }
 
   &__link{
+    grid-area: link;
     background: var(--color-green-light);
     box-shadow: var(--shadow-box-service);
     width: rem(50);
@@ -119,5 +131,122 @@
     border-radius: rem(15);
     display: grid;
     place-content: center;
+  }
+}
+
+.banner-finance{
+  .banner-service{
+    display: flex;
+  }
+
+  &__image{
+    width: rem(190);
+    height: rem(180);
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  &__info{
+    position: relative;
+    z-index: 1;
+    margin-bottom: rem(30);
+  }
+
+  &__links{
+    display: flex;
+    gap: rem(20);
+  }
+
+  &__link{
+    box-shadow: var(--shadow-box-service);
+    background: var(--color-green-light);
+    border-radius: rem(10);
+    padding-inline: rem(10);
+    line-height: rem(50);
+    min-width: rem(120);
+
+    font-weight: 800;
+    text-align: center;
+    //font-size: 24px;
+    @include fluid-text(24, 20);
+    letter-spacing: 0.01em;
+    color: var(--color-blue-gray);
+    text-decoration: none;
+  }
+}
+
+.banner-contract{
+  &__header{
+    display: flex;
+    align-items: center;
+    gap: rem(40);
+  }
+
+  &__number{
+    border-radius: rem(10);
+    padding-inline: rem(40);
+    line-height: rem(40);
+    background: var(--color-blue-80);
+
+    font-weight: 800;
+    @include fluid-text(24, 20);
+    color: #fff;
+  }
+
+  &__name{
+    margin-bottom: rem(36);
+
+    font-weight: 600;
+    @include fluid-text(30, 18);
+    line-height: 160%;
+    color: var(--color-black-light);
+  }
+
+  &__address{
+    max-width: rem(430);
+
+    font-weight: 400;
+    @include fluid-text(28, 18);
+    line-height: 150%;
+    color: #202121;
+    font-style: normal;
+  }
+
+  &__image{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: rem(200);
+    height: rem(190);
+  }
+
+  .banner-finance{
+    &__link{
+      position: absolute;
+      right: rem(25);
+      bottom: rem(25);
+    }
+  }
+}
+
+.banner-finance,
+.banner-services,
+.banner-contract{
+  &__body{
+    background: var(--color-white);
+    border-radius: rem(45);
+    padding: rem(25) rem(45);
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__title{
+    margin-bottom: rem(10);
+
+    font-weight: 600;
+    //font-size: 44px;
+    @include fluid-text(44, 24);
+    color: var(--color-blue);
   }
 }

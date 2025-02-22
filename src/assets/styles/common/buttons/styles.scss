@@ -28,4 +28,12 @@
     color: var(--color-blue-gray);
   }
 
+  &_search{
+    position: absolute;
+    @include centerBlock;
+    left: rem(18);
+    translate: 0 -50%;
+    width: rem(24);
+    height: rem(20);
+  }
 }

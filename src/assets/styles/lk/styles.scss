@@ -1,11 +1,44 @@
-.home-auth{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: fluid(110, 20);
+.home-lk{
 
   &__body{
-    max-width: rem(1020);
+    display: grid;
+    @include min-width(1300px){
+      grid-template-columns: rem(505) rem(724);
+    }
+    gap: rem(25);
+    margin-bottom: rem(40);
+  }
+
+  .banner-services{
+    grid-column: 1 / -1;
+  }
+
+  &__search{
+    display: flex;
+    justify-content: flex-end;
+    margin-block: rem(15);
+    position: relative;
+  }
+
+  &__form{
+    position: relative;
+    max-width: rem(350);
     width: 100%;
+    margin-right: rem(30);
+
+    .form__input{
+      line-height: rem(30);
+      padding-left: rem(36);
+    }
+  }
+
+  &__images{
+    margin-bottom: rem(25);
+
+    .image{
+      @include block-responsive('.pict', 65.5%);
+      border-radius: rem(24);
+      overflow: hidden;
+    }
   }
 }

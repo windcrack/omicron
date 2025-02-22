@@ -1,3 +1,81 @@
+@include max-width(1160){
+  .banner-services{
+    &__body{
+      padding-inline: rem(40);
+      & > :nth-child(1 of .banner-services__image){
+        display: none;
+      }
+
+      & > :nth-child(2 of .banner-services__image){
+        width: rem(220);
+        height: rem(240);
+        right: 0;
+      }
+    }
+
+    &__info{
+      max-width: rem(460);
+    }
+
+    &__title{
+      margin-bottom: rem(20);
+    }
+
+  }
+
+  .banner-service{
+    column-gap: rem(12);
+    &__image{
+      width: rem(35);
+      height: rem(35);
+    }
+
+    &__name,
+    &__type{
+      font-size: rem(24);
+    }
+
+    &__link{
+      width: rem(40);
+      height: rem(40);
+      border-radius: rem(12);
+    }
+  }
+
+  .banner-finance{
+    &__image{
+      width: rem(290);
+      height: rem(240);
+      right: rem(40);
+    }
+
+    &__links{
+      gap: rem(40);
+    }
+  }
+
+  .banner-contract{
+    &__header{
+      margin-bottom: rem(20);
+    }
+
+    &__name,
+    &__address{
+      font-size: rem(24);
+    }
+
+    .banner-finance{
+      &__link{
+        right: rem(50);
+      }
+    }
+
+    &__image{
+      right: rem(30);
+    }
+  }
+}
+
 @include max-width(1024){
   .banner{
     background: none;
