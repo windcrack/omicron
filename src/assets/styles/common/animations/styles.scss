@@ -1,0 +1,21 @@
+@keyframes scroll {
+  from {
+	transform: translateX(0);
+  }
+  to {
+	//transform: translateX(calc(-100% - 20px));
+	transform: translateX(-100%);
+  }
+}
+
+@keyframes rotate {
+  //from{
+	////transform: rotate(0);
+	//transform: rotate3d(0, 0, 0, 0);
+  //}
+
+  to{
+	//transform: rotate(180deg);
+	transform: rotate3d(0, 0, 1, 360deg);
+  }
+}

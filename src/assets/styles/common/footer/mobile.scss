@@ -1,0 +1,7 @@
+@include max-width(800){
+  .footer{
+    &__body{
+      flex-flow: wrap;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+@include max-width(850){
+  .breadcrumbs{
+	@include full-page-block-calc(16px);
+	margin-inline-start: 0;
+	overflow: auto;
+
+	&__link{
+	  text-wrap: nowrap;
+	}
+  }
+}

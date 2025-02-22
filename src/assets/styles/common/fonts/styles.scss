@@ -1,0 +1,53 @@
+// @font-face {
+//   font-family: 'rubl';
+//   src: url('../fonts/ALSRubl.eot');
+//   src: url('../fonts/ALSRubl.eot?#iefix') format('embedded-opentype'),
+//   url('../fonts/ALSRubl.woff') format('woff'),
+//   url('../fonts/ALSRubl.ttf') format('truetype');
+//   font-weight: normal;
+//   font-style: normal;
+// }
+// Montserrat
+
+@font-face {
+ font-family: 'Montserrat';
+ //src: url('/frontend/src/fonts/Montserrat/Montserrat-Bold.ttf') format('truetype');
+ src: url('/src/assets/fonts/Montserrat/Montserrat-ExtraBold.ttf') format('truetype');
+ font-weight: 800;
+ font-style: normal;
+}
+@font-face {
+ font-family: 'Montserrat';
+ //src: url('/frontend/src/fonts/Montserrat/Montserrat-Bold.ttf') format('truetype');
+ src: url('/src/assets/fonts/Montserrat/Montserrat-Bold.ttf') format('truetype');
+ font-weight: 700;
+ font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/src/assets/fonts/Montserrat/Montserrat-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/src/assets/fonts/Montserrat/Montserrat-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/src/assets/fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('/src/assets/fonts/Montserrat/Montserrat-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}

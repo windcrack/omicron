@@ -1,0 +1,56 @@
+.banner{
+  background: url("/src/assets/img/home/banner-bg.png") no-repeat center/cover;
+
+  @include min-width(1024px){
+    border-radius: rem(46);
+    min-height: rem(280);
+  }
+  overflow: hidden;
+  margin-block: rem(20) rem(50);
+
+  &__body{
+    display: flex;
+    //align-items: center;
+  }
+
+  &__image{
+    @include min-width(1024px){
+      max-width: rem(765);
+      flex-shrink: 0;
+    }
+    width: 100%;
+    @include block-responsive('.pict', 23%);
+
+  }
+
+  &__socials{
+    display: flex;
+    align-items: center;
+    gap: rem(18);
+    margin-bottom: rem(10);
+  }
+
+  &__logo{
+    max-width: rem(480);
+    width: 100%;
+    height: rem(150);
+  }
+
+  &__info{
+    max-width: rem(480);
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+  }
+
+  &__contacts,
+  &__socials{
+    margin-inline: auto;
+  }
+
+  &__contacts{
+    display: flex;
+    flex-flow: column;
+    gap: rem(20);
+  }
+}

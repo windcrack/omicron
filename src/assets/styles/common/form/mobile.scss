@@ -1,0 +1,9 @@
+@include max-width(800){
+  .form{
+    //border-radius: 0;
+    overflow: hidden;
+    &__body{
+      border-radius: rem(10) rem(10) 0 0;
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@include max-width(1024){
+  .banner{
+    background: none;
+    &__info{
+      display: none;
+    }
+    &__image{
+      border-radius: rem(10);
+      overflow: hidden;
+      padding-bottom: rem(180);
+    }
+  }
+}

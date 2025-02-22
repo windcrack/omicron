@@ -1,0 +1,16 @@
+@include max-width(900){
+  .btn{
+	&_hero{
+	  font-size: 14px;
+	}
+	&_slider-prev,
+	&_slider-next{
+	  display: none;
+	}
+
+	&_filter-type{
+	  line-height: 171%;
+	  letter-spacing: 0.07em;
+	}
+  }
+}

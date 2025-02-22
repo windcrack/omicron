@@ -1,0 +1,11 @@
+@include max-width(900){
+  .modal-menu{
+	&__close{
+	  display: none;
+	}
+
+	&__footer{
+	  margin-top: 40px;
+	}
+  }
+}

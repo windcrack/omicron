@@ -1,0 +1,31 @@
+.btn{
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0;
+  //border-radius: 60px;
+
+  color: var(--color-white);
+  font-family: var(--font-default);
+  //font-size: clamp(1rem, calc(0.934rem + 0.33vw), 1.25rem);
+  @include fluid-text(16, 18);
+  font-weight: 500;
+  text-decoration: none;
+  text-align: center;
+
+  &_form{
+    background: var(--color-green-light);
+    flex-grow: 1;
+    line-height: rem(56);
+    border-radius: rem(10);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25), 0 4px 4px 0 rgba(0, 0, 0, 0.25), 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+
+    font-weight: 800;
+    @include fluid-text(30, 22);
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--color-blue-gray);
+  }
+
+}

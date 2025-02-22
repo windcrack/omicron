@@ -1,0 +1,43 @@
+.header{
+  position: relative;
+  background: var(--color-blue-08);
+
+  &__body{
+    display: flex;
+    align-items: center;
+  }
+}
+
+.header-left-block{
+    background: var(--color-blue-08);
+    height: rem(70);
+    //width: calc(100% + 145px);
+    width: calc(100% + 16px);
+    grid-column: 1;
+    margin-left: rem(-16);
+    //position: relative;
+}
+
+.header-logo{
+  width: rem(100);
+  height: rem(70);
+  background: var(--color-blue-08);
+  position: relative;
+  display: grid;
+  place-content: center;
+
+  &__link{
+    height: rem(56);
+  }
+  &:after{
+    content: "";
+    display: block;
+    width: rem(110);
+    height: rem(70);
+    position: absolute;
+    top: 0;
+    right: rem(-110);
+    background: var(--color-blue-08);
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+  }
+}

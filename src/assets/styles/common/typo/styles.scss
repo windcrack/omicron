@@ -1,0 +1,337 @@
+.typo{
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6{
+	//margin-bottom: 0.5em;
+	margin-bottom: 1rem;
+  }
+
+  p{
+    &:not(:last-of-type){
+      margin-bottom: 1rem;
+    }
+  }
+
+  h1{
+    font: 600 clamp(19px, calc(0.686rem + 2.23vw), 48px) / 1.33333 var(--font-default);
+    text-transform: uppercase;
+  }
+
+  h2{
+    font: 700 clamp(24px, calc(1.223rem + 1.23vw), 40px) / 1.2 var(--font-default);
+    text-transform: uppercase;
+  }
+
+  h3{
+    font: 600 clamp(19px, calc(0.824rem + 1.62vw), 40px) / 1.2 var(--font-default);
+  }
+
+  h4{
+    font: 400 40px / 1.2 var(--font-default);
+  }
+
+  h5{
+    font: 600 32px / 1.25 var(--font-default);
+  }
+
+  h6{
+    font: 600 16px / 1.5 var(--font-default);
+    text-transform: uppercase;
+  }
+
+  p{
+    font: 400 clamp(19px, calc(1.101rem + 0.38vw), 24px) / 1.33333 var(--font-default);
+  }
+
+  b{
+    font: 600 24px / 1.33333 var(--font-default);
+  }
+
+  span{
+    font: 400 16px / 1.5 var(--font-default);
+  }
+
+  small{
+    font: 300 12px / 1.33333 var(--font-default);
+    color: var(--color-gray-dark);
+  }
+
+  ul,
+  ol{
+    li{
+      margin-bottom: 0.5em;
+      font: 400 24px / 1.33333 var(--font-default);
+      p{
+        font: 400 24px / 1.33333 var(--font-default);
+      }
+    }
+  }
+
+  table{
+    th,
+    td{
+      padding-bottom: 0.5em;
+
+      font: 400 24px / 1.33333 var(--font-default);
+
+      p{
+        font: 400 24px / 1.33333 var(--font-default);
+      }
+    }
+  }
+
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+
+  &_about,
+  &_rent{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6{
+      margin-bottom: 0;
+    }
+
+    p:not(:last-of-type){
+      margin-bottom: 0;
+    }
+
+    h2{
+      font-size: clamp(20px, calc(0.714rem + 2.38vw), 40px);
+    }
+
+    h4{
+      font-size: clamp(19px, calc(0.625rem + 2.5vw), 40px);
+    }
+
+    h5{
+      font-size: clamp(19px, calc(0.839rem + 1.55vw), 32px);
+    }
+
+    p,
+    a,
+    b,
+    strong{
+      margin-bottom: 0.5em;
+
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 150%;
+      color: inherit;
+
+      & > *{
+        font-size: 16px;
+        line-height: 150%;
+      }
+    }
+
+    b,
+    strong{
+      font-weight: 600;
+    }
+
+    ul,
+    ol{
+      padding: 0;
+      list-style-position: inside;
+
+      li{
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+
+        &::marker{
+          font-size: 10px;
+        }
+
+        p,
+        a,
+        b,
+        strong{
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 150%;
+
+          & > *{
+            font-size: 16px;
+            line-height: 150%;
+          }
+        }
+
+        b,
+        strong{
+          font-weight: 600;
+        }
+      }
+    }
+
+    ol,
+    ul{
+      li{
+
+        &:not(:last-of-type){
+          margin-bottom: 1em;
+        }
+
+        &:last-of-type{
+          margin-bottom: 0;
+        }
+
+        &::marker{
+          font-size: inherit;
+        }
+      }
+    }
+
+    table{
+      border-collapse: collapse;
+
+      td{
+        padding: 12px 8px;
+        min-width: clamp(206px, calc(10.357rem + 11.19vw), 300px);
+
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+
+        p,
+        a,
+        b,
+        strong{
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 150%;
+
+          & > *{
+            font-size: 16px;
+            line-height: 150%;
+          }
+        }
+
+        b,
+        strong{
+          font-weight: 600;
+        }
+      }
+
+      tr{
+        &:nth-child(even){
+          td{
+            background: var(--color-white-dart-50);
+            border: none;
+          }
+        }
+
+        &:last-child{
+          td{
+            border-bottom: 1px solid var(--color-white-dark);
+          }
+        }
+      }
+
+      thead{
+        td{
+          padding: 8px;
+          border-bottom: 1px solid var(--color-white-dark);
+
+          color: var(--color-gray-border-catalog);
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 133%;
+        }
+      }
+    }
+
+    blockquote {
+      background: var(--color-white-dark-54);
+      padding: 24px;
+      position: relative;
+      margin-top: clamp(26px, calc(1.518rem + 0.48vw), 30px);
+      //margin-bottom: 40px;
+
+      text-align: center;
+
+      & > * {
+        font-weight: 400;
+        font-size: clamp(19px, calc(1.054rem + 0.6vw), 24px);
+        line-height: 133%;
+        text-align: center;
+      }
+
+      small{
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 133%;
+        text-align: center;
+        color: inherit;
+      }
+
+      &::before{
+        content: "";
+        position: absolute;
+        display: block;
+        left: 50%;
+        top: -27px;
+        translate: -50%;
+        width: 40px;
+        height: 40px;
+        background-image: url('data:image/svg+xml,%3Csvg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M30.5615 16.9034C28.3535 17.2874 26.6975 18.2474 25.5935 19.7834C24.5375 21.2714 23.9615 23.1194 23.8655 25.3274C24.1055 25.2314 24.3695 25.1594 24.6575 25.1114C24.9455 25.0154 25.2335 24.9674 25.5215 24.9674C26.9615 24.9674 28.0655 25.4234 28.8335 26.3354C29.6015 27.2474 29.9855 28.3754 29.9855 29.7194C29.9855 31.2074 29.5535 32.4314 28.6895 33.3914C27.8255 34.3034 26.6495 34.7594 25.1615 34.7594C23.7215 34.7594 22.5215 34.2314 21.5615 33.1754C20.6015 32.1194 20.1215 30.5594 20.1215 28.4954C20.1215 25.1834 20.5295 22.5194 21.3455 20.5034C22.2095 18.4394 23.4335 16.9034 25.0175 15.8954C26.6015 14.8394 28.4495 14.2154 30.5615 14.0234V16.9034ZM16.5215 16.9034C14.2655 17.2874 12.6095 18.2474 11.5535 19.7834C10.4975 21.2714 9.9215 23.1194 9.8255 25.3274C10.0655 25.2314 10.3055 25.1594 10.5455 25.1114C10.8335 25.0154 11.1215 24.9674 11.4095 24.9674C12.8015 24.9674 13.9055 25.4234 14.7215 26.3354C15.5375 27.2474 15.9455 28.3754 15.9455 29.7194C15.9455 31.2074 15.4895 32.4314 14.5775 33.3914C13.7135 34.3034 12.5375 34.7594 11.0495 34.7594C9.5615 34.7594 8.3375 34.2314 7.3775 33.1754C6.4175 32.1194 5.9375 30.5594 5.9375 28.4954C5.9375 25.1834 6.3695 22.5194 7.2335 20.5034C8.0975 18.4394 9.3215 16.9034 10.9055 15.8954C12.4895 14.8394 14.3615 14.2154 16.5215 14.0234V16.9034Z" fill="black"/%3E%3C/svg%3E');
+      }
+    }
+
+    iframe,
+    video{
+      grid-column: block-start / block-end;
+      width: 100%;
+      height: clamp(180px, calc(-1.985rem + 58.82vw), 780px);
+      border: 1px solid black;
+    }
+  }
+
+  &_about{
+    h2{
+      &:nth-child(1){
+        font-weight: 600;
+        font-size: clamp(24px, calc(0.857rem + 2.86vw), 48px);
+      }
+    }
+  }
+
+  &_rent{
+    h3{
+      font-weight: 600;
+      font-size: clamp(30px, calc(1.607rem + 1.19vw), 40px);
+      line-height: 120%;
+    }
+
+    h5{
+      font: 600 clamp(19px, calc(0.839rem + 1.55vw), 32px) / 1.25 var(--font-default);
+    }
+  }
+
+  &_catalog-detail-text{
+    font-weight: 400;
+    font-size: clamp(14px, calc(0.845rem + 0.13vw), 16px);
+    line-height: 150%;
+
+    p,
+    a{
+      font-weight: 400;
+      font-size: clamp(14px, calc(0.845rem + 0.13vw), 16px);
+      line-height: 150%;
+      color: inherit;
+    }
+  }
+}

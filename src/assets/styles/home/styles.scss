@@ -1,0 +1,11 @@
+.home-auth{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: fluid(110, 20);
+
+  &__body{
+    max-width: rem(1020);
+    width: 100%;
+  }
+}
