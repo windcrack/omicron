@@ -1,0 +1,7 @@
+@include max-width(410){
+  .header-user{
+    &__name{
+      display: none;
+    }
+  }
+}

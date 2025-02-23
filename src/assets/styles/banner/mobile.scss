@@ -1,4 +1,49 @@
+@include max-width(1180){
+  .banner{
+    min-height: inherit;
+    &__body{
+      justify-content: space-between;
+    }
+    &__image{
+      width: rem(468);
+      height: rem(174);
+      flex-shrink: 0;
+    }
+    &__logo{
+      //width: 297px;
+      //height: 80px;
+      width: rem(300);
+      height: rem(80);
+    }
+
+    &__socials{
+      .social{
+        width: rem(25);
+        height: rem(25);
+      }
+    }
+
+    &__contacts{
+      //margin-right: rem(20);
+      translate: rem(-20);
+      .contact{
+        font-size: rem(13);
+
+        &__link,
+        &__district{
+          font-size: rem(13);
+        }
+      }
+    }
+  }
+}
+
 @include max-width(1160){
+  .banner{
+    &__info{
+      align-items: flex-end;
+    }
+  }
   .banner-services{
     &__body{
       padding-inline: rem(40);
@@ -76,16 +121,120 @@
   }
 }
 
-@include max-width(1024){
+@include max-width(760){
   .banner{
     background: none;
     &__info{
       display: none;
     }
     &__image{
+      width: 100%;
       border-radius: rem(10);
       overflow: hidden;
-      padding-bottom: rem(180);
+      //padding-bottom: rem(180);
+      padding-bottom: 25.4%;
+
+      .pict{
+        object-fit: contain;
+      }
     }
   }
+
+  .banner-services{
+    &__image{
+      display: none;
+    }
+
+    &__info{
+      max-width: 100%;
+    }
+
+  }
+
+  .banner-service{
+    gap: rem(10);
+    grid-template-columns: rem(25) auto rem(28);
+
+    &__image{
+      width: rem(25);
+      height: rem(25);
+    }
+
+    &__name,
+    &__type{
+      font-size: rem(18);
+    }
+
+    &__link{
+      width: rem(28);
+      height: rem(28);
+      border-radius: rem(8);
+
+      svg{
+        width: rem(13);
+        height: rem(10);
+      }
+    }
+  }
+
+  .banner-finance{
+
+    &__image{
+      width: rem(120);
+      height: rem(110);
+      top: rem(12);
+      right: rem(30);
+    }
+
+    &__links{
+      gap: rem(10);
+    }
+
+    &__link{
+      min-width: inherit;
+      padding-inline: rem(5);
+    }
+  }
+
+  .banner-finance,
+  .banner-contract,
+  .banner-services{
+    &__body{
+      border-radius: 10px;
+      padding: rem(12) rem(15) rem(15);
+    }
+  }
+  .banner-contract{
+    &__image{
+      display: none;
+    }
+    &__body{
+      padding: rem(12) rem(15) rem(25);
+
+      .banner-finance{
+        &__link{
+          margin-top: rem(25);
+          display: block;
+          width: fit-content;
+          margin-inline: auto;
+          position: static;
+          line-height: rem(40);
+          height: rem(40);
+        }
+      }
+    }
+  }
+
+  .banner-contract{
+    &__header{
+      justify-content: space-between;
+      margin-bottom: rem(10);
+    }
+
+    &__name,
+    &__address{
+      font-size: rem(18);
+    }
+  }
+
 }

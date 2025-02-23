@@ -1,9 +1,10 @@
-@include max-width(800){
-  .home-auth{
-    &__body{
-      box-shadow: var(--shadow-box-input);
-      border: 1px solid var(--color-black-50);
-      border-radius: rem(10);
+@include max-width(768){
+  .home-lk{
+    &__images{
+      container-type: inline-size;
+      .swiper-slide{
+        max-width: calc(100cqw - #{fluid(100, 40)});
+      }
     }
   }
 }

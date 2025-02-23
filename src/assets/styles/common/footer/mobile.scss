@@ -5,3 +5,27 @@
     }
   }
 }
+
+@include max-width(768){
+  .footer{
+    &__descr{
+      max-width: inherit;
+      //gap: rem(50);
+    }
+  }
+}
+
+@include minmax-media(768px, 500px){
+  .footer{
+    &__descr{
+      flex-flow: row;
+    }
+    &__policy{
+      max-width: rem(350);
+    }
+
+    &__text{
+      max-width: rem(310);
+    }
+  }
+}

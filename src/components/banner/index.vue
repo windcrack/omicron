@@ -15,7 +15,7 @@ import LogoWhite from "@/components/icons/logoWhite.vue";
     <div class="banner__body">
       <div class="banner__image">
         <picture>
-          <source media="(min-width: 700px)" :srcset="BannerMan" />
+          <source media="(min-width: 761px)" :srcset="BannerMan" />
           <img :src="BannerMob" alt="" class="pict">
         </picture>
       </div>

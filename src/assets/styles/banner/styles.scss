@@ -1,8 +1,11 @@
 .banner{
   background: url("/src/assets/img/home/banner-bg.png") no-repeat center/cover;
 
-  @include min-width(1024px){
+  @include min-width(760px){
     border-radius: rem(46);
+  }
+
+  @include min-width(1024px){
     min-height: rem(280);
   }
   overflow: hidden;
